@@ -1,0 +1,57 @@
+#Authorization{
+    margin-bottom:80px;
+}
+
+.addAuthorization{
+    border-left:3px solid rgb(161, 48, 48);
+    width:40%;
+    padding:20px;
+    float:left;
+}
+
+.addAuthorization input{
+    border:none;
+    border-bottom: 1px solid rgb(161, 48, 48);
+    padding:5px;
+}
+
+.addAuthorization button{
+    border:1px solid rgb(161, 48, 48);
+    background-color: white;
+    color:rgb(161, 48, 48);
+    padding:5px 15px;
+    cursor: pointer;
+}
+
+
+.authorizationList {
+    float:left;
+    width:60%;
+}
+
+.authorizationList .address{
+    margin-bottom:15px;
+    position:relative;
+    text-align: center;
+}
+.authorizationList .address:after{
+    position: absolute;
+    content :' ';
+    width:40%;
+    left:30%;
+    bottom:-8px;
+    border-bottom:1px solid rgb(90, 90, 90);
+}
+
+.authorizationList .address.current{
+    color:rgb(161, 48, 48);
+}
+.authorizationList .address i{
+    background-color: rgb(161, 48, 48);
+    padding:5px;
+    color:white;
+    border-radius:5px;
+    margin-left:10px;
+    cursor: pointer;
+}
+

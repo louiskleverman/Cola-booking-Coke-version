@@ -1,0 +1,21 @@
+.Banner{
+    height:250px;
+    background-color:rgb(175, 0, 0);
+    color:white;
+    text-align: center;
+    padding-top:50px;
+}
+
+.Banner img{
+    height:70px;
+    width:auto;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+
+.Banner {
+    font-size:20px;
+    font-weight:300;
+    text-transform: uppercase;
+    font-family:Moon;
+}

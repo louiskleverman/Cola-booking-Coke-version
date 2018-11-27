@@ -1,0 +1,119 @@
+#Bookings{
+    border-top:2px solid rgb(161, 48, 48);
+    padding:40px 10px;
+    margin-top:40px;
+    margin-bottom:40px;
+    border-bottom:2px solid rgb(161, 48, 48);
+}
+
+.roomSelect{
+    float:left;
+    width:15%;
+    margin-top:20px;
+    background-color: rgb(161, 48, 48);
+    color:white;
+    padding:10px;
+    font-size:17px;
+    border:3px solid rgb(230, 137, 137);
+    position:relative;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-radius:2px;
+}
+.roomSelect:after, .roomSelect:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.roomSelect:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: rgb(161, 48, 48);
+	border-width: 16px;
+	margin-top: -16px;
+}
+.roomSelect:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: rgb(230, 137, 137);
+	border-width: 20px;
+	margin-top: -20px;
+}
+
+#selectRoom{
+    background: none;
+    border-color:rgb(230, 137, 137);
+    color:white;
+}
+#selectRoom option{
+    color:rgb(161, 48, 48);
+}
+
+
+.rooms{  
+    float:right;
+    width:85%;
+    border-left:2px solid rgb(161, 48, 48);
+    padding:10px;
+    padding-left:30px;
+}
+
+.roomRow{
+    position:relative;
+    margin-top:30px;
+    display:inline-block;
+    border-left:1px solid grey;
+    border-right:1px solid grey;
+    padding:0px 8px;
+}
+
+.roomRow .begining{
+    position:absolute;
+    top:-26px;
+    left:-20px;
+}
+.roomRow .end{
+    position:absolute;
+    top:-26px;
+    right:-20px;
+}
+
+.reservation{
+    display:inline-block;
+    padding:10px;
+    margin:3px;
+    border:1px dotted grey;
+    font-size:0.8em;
+    cursor: pointer;
+    transition: 0.2s;
+    position:relative;
+}
+
+.reservation.company1{
+    background-color:rgb(161, 48, 48);
+    color:white;
+}
+.reservation.company2{
+    background-color:rgb(48, 125, 161);
+    color:white;
+}
+
+.reservation .delete{
+    position:absolute;
+    top:-8px;
+    right:-5px;
+    color:rgb(99, 99, 99);
+    border:1px solid rgb(99, 99, 99);
+    border-radius:3px;
+    padding:1px 2px;
+    font-size:10px;
+    background:white;
+    opacity:0.5;
+    transition:0.2s;
+}
+.reservation .delete:hover{
+    opacity:0.9;
+}
