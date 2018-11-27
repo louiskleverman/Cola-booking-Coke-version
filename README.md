@@ -6,7 +6,7 @@
 In order to run the project you must first of all clone the project
 
 ```
-git clone ...
+git clone https://github.com/louiskleverman/Cola-booking-Coke-version.git
 ```
 
 Once cloned you have to install the packages with the following :
