@@ -64,8 +64,18 @@ class Bookings extends React.Component{
                         <div className="end">20h</div>
                         {
                             secondHalf.map(room=>(
-                                <div className={"reservation company" + room.company} onClick={()=>this.reserve(room.room,room.hour)} title={room.reserver}>
-                                    {room.hour+6}h - {room.hour+7}h
+                                <div 
+                                className={"reservation company" + room.company} 
+                                data-toggle="tooltip" data-placement="top"  title={room.reserver}>
+                                    <div className="information" onClick={()=>this.reserve(room.room,room.hour)} >
+                                        {room.hour+6}h - {room.hour+7}h
+                                    </div>
+                                    {
+                                        this.props.state.account == room.reserver ?
+                                        <i className="delete fas fa-times" onClick={() => this.removeReservation(room.room,room.hour)}></i>
+                                        : ""
+                                    }
+                                    
                                 </div>
                             ))
                         }

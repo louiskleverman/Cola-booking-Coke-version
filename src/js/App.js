@@ -103,7 +103,7 @@ class App extends React.Component {
   }
 
   reserve = (room,hour) =>{
-    this.state.bookingInstance.reservePepsi(room,hour,{from:this.state.account}).then(()=>{
+    this.state.bookingInstance.reserveCoke(room,hour,{from:this.state.account}).then(()=>{
       alert("Reserved!")
     });
   }
